@@ -23,7 +23,7 @@ The free app goes to sleep when idle, so the first visit may need a click on "wa
 - A Python data generator and a Streamlit interface
 
 ## Schema
-![ER diagram](docs/er_diagram.png)
+![ER diagram](docs/ER_diagram.png)
 
 Design decisions:
 - **`stages` is a lookup table**, not free text, so typos can't happen and `sort_order` lets the trigger check the order of moves.
@@ -50,11 +50,11 @@ Closed jobs don't count toward the duplicate rule, so a role can be posted again
 ![Closed job blocked](docs/screenshots/closed_job_blocked.png)
 
 ## Index demo
-On a separate 300,000-row test table, filtering by `application_id`:
-- Without an index: parallel sequential scan, **15.3 ms**
-- With a B-tree index: bitmap index scan, **0.059 ms**, about 260x faster
+To see what an index does, I filtered a separate test table with 300,000 rows.
+- Without an index, the database checked every row: **15.3 ms**
+- With an index, it jumped straight to the matching rows: **0.059 ms**, about 260x faster
 
-The same idea applies to `idx_history_app_time` in the real schema, since history queries filter by application and sort by time.
+The same idea applies to the history table, where an index helps look up the changes of one application quickly.
 
 ![Before](docs/screenshots/explain_before.png)
 ![After](docs/screenshots/explain_after.png)
