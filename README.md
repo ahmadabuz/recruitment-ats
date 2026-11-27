@@ -62,7 +62,7 @@ The same idea applies to the history table, where an index helps look up the cha
 ## Transactions
 A valid stage move followed by an invalid one inside one transaction caused the whole transaction to roll back, leaving the application unchanged. In PostgreSQL an error aborts the transaction, so the final `COMMIT` acts as a rollback.
 
-![Rollback test](docs/screenshots/transaction_rollback.png)
+![Rollback test](screenshots/transaction_rollback.png)
 
 ## Example queries
 `sql/04_queries.sql` has three queries: funnel by stage, average days in each stage, and hire rate by source. The data is synthetic and randomly generated, so the results only show that the queries work, not real hiring patterns.
