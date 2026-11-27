@@ -64,8 +64,8 @@ The same idea applies to the history table, where an index helps look up the cha
 <hr style="border: none; border-top: 2px solid black; margin: 24px 0;">
 <br>
 <br>
-<br>
-![After](screenshots/explain_after.png)
+
+![Before](screenshots/explain_before.png) 
 
 ## Transactions
 A valid stage move followed by an invalid one inside one transaction caused the whole transaction to roll back, leaving the application unchanged. In PostgreSQL an error aborts the transaction, so the final `COMMIT` acts as a rollback.
