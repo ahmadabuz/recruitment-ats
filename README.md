@@ -57,6 +57,8 @@ To see what an index does, I filtered a separate test table with 300,000 rows.
 The same idea applies to the history table, where an index helps look up the changes of one application quickly.
 
 ![Before](screenshots/explain_before.png)
+
+
 ![After](screenshots/explain_after.png)
 
 ## Transactions
