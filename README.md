@@ -61,7 +61,7 @@ The same idea applies to the history table, where an index helps look up the cha
 <br>
 <br>
 <br>
-<br>
+<hr style="border: none; border-top: 2px solid black; margin: 24px 0;">
 <br>
 <br>
 <br>
