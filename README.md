@@ -6,11 +6,11 @@ The focus is the schema and the rules the database enforces on its own, with a s
 **Live demo:** https://ahmadabuz-recruitment-ats-appapp-ni54gf.streamlit.app/
 The free app goes to sleep when idle, so the first visit may need a click on "wake up". All data is synthetic.
 
-![App](screenshots/1.png)
-![App](screenshots/2.png)
-![App](screenshots/3.png)
-![App](screenshots/4.png)
-![App](screenshots/5.png)
+![App](screenshots/ui1.png)
+![App](screenshots/ui2.png)
+![App](screenshots/ui3.png)
+![App](screenshots/ui4.png)
+![App](screenshots/ui5.png)
 
 ## What it demonstrates
 - Relational schema design with primary keys, foreign keys and constraints
