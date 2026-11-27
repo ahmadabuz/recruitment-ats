@@ -56,11 +56,7 @@ To see what an index does, I filtered a separate test table with 300,000 rows.
 
 The same idea applies to the history table, where an index helps look up the changes of one application quickly.
 
-![Before](screenshots/explain_before.png)
-<br>
-<br>
-<br>
-![After](screenshots/explain_after.png)
+![Before](screenshots/explain_before.png) &nbsp; &nbsp;![After](screenshots/explain_after.png)
 
 ## Transactions
 A valid stage move followed by an invalid one inside one transaction caused the whole transaction to roll back, leaving the application unchanged. In PostgreSQL an error aborts the transaction, so the final `COMMIT` acts as a rollback.
