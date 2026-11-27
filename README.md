@@ -67,7 +67,9 @@ A valid stage move followed by an invalid one inside one transaction caused the 
 ## Example queries
 `sql/04_queries.sql` has three queries: funnel by stage, average days in each stage, and hire rate by source. The data is synthetic and randomly generated, so the results only show that the queries work, not real hiring patterns.
 
-![Queries](docs/screenshots/funnel_queries.png)
+![Queries](screenshots/sql_queries1.png)
+![Queries](screenshots/sql_queries2.png)
+![Queries](screenshots/sql_queries3.png)
 
 ## Project structure
 ```
