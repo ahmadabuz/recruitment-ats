@@ -23,7 +23,7 @@ The free app goes to sleep when idle, so the first visit may need a click on "wa
 - A Python data generator and a Streamlit interface
 
 ## Schema
-![ER diagram](docs/ER_diagram.png)
+![ER diagram](screenshots/ER_diagram.png)
 
 Design decisions:
 - **`stages` is a lookup table**, not free text, so typos can't happen and `sort_order` lets the trigger check the order of moves.
