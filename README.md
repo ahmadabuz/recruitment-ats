@@ -58,6 +58,8 @@ The same idea applies to the history table, where an index helps look up the cha
 
 ![Before](screenshots/explain_before.png)
 <br>
+<br>
+<br>
 ![After](screenshots/explain_after.png)
 
 ## Transactions
